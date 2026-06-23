@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --navy-950: #0a1428;
+  --navy-900: #0f1f3d;
+  --navy-800: #16294d;
+  --navy-700: #1f3760;
+  --navy-600: #2c4a7c;
+  --gold-100: #fbeec3;
+  --gold-300: #f3d785;
+  --gold-500: #e8b931;
+  --gold-600: #cc9d1f;
+  --gold-700: #9c7714;
+  --paper: #f7f7f4;
+  --paper-dim: #ececE6;
+  --ink: #16191f;
+  --ink-soft: #5a5f6b;
+  --green-600: #2f8f5b;
+  --red-600: #c4493b;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  font-family: var(--font-body);
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
