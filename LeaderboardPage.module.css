@@ -1,0 +1,173 @@
+.page {
+  min-height: 100vh;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background: var(--navy-900);
+  color: white;
+  padding: 22px 24px 26px;
+}
+
+.headerInner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headerEyebrow {
+  display: inline-block;
+  border: 1px solid var(--gold-500);
+  color: var(--gold-300);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+
+.headerTitle {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.headerSub {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  margin: 6px 0 0;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+  padding: 24px 20px 60px;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-soft);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: white;
+  border: 1px solid var(--paper-dim);
+  border-radius: 14px;
+  padding: 14px 18px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.rowTop3 {
+  border-color: var(--gold-500);
+  background: linear-gradient(to right, var(--gold-100), white 35%);
+}
+
+.rank {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  width: 32px;
+  text-align: center;
+  color: var(--ink-soft);
+  flex-shrink: 0;
+}
+
+.rankTop3 {
+  color: var(--gold-700);
+}
+
+.medal {
+  font-size: 20px;
+}
+
+.nameBlock {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin: 1px 0 0;
+}
+
+.points {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--navy-900);
+  flex-shrink: 0;
+}
+
+.pointsLabel {
+  font-size: 10.5px;
+  color: var(--ink-soft);
+  font-weight: 400;
+  display: block;
+  text-align: right;
+  margin-top: 1px;
+}
+
+.liveTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+}
+
+.liveDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green-600);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.footerActions {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.footerActions button {
+  background: none;
+  border: none;
+  color: var(--navy-700);
+  font-weight: 600;
+  font-size: 13.5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
